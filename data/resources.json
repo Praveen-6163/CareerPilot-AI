@@ -1,0 +1,61 @@
+[
+  {
+    "category": "Python",
+    "items": [
+      {"title": "Python Official Documentation", "platform": "Python", "type": "Documentation", "difficulty": "Beginner", "time": "1-2 hours", "url": "https://docs.python.org/3/"},
+      {"title": "Python for Everybody", "platform": "Coursera", "type": "Course", "difficulty": "Beginner", "time": "4 weeks", "url": "https://www.coursera.org/specializations/python"},
+      {"title": "Real Python Tutorials", "platform": "Real Python", "type": "Tutorial", "difficulty": "Beginner", "time": "30-60 mins", "url": "https://realpython.com/"}
+    ]
+  },
+  {
+    "category": "SQL",
+    "items": [
+      {"title": "SQL Tutorial", "platform": "W3Schools", "type": "Tutorial", "difficulty": "Beginner", "time": "2 hours", "url": "https://www.w3schools.com/sql/"},
+      {"title": "Mode SQL Tutorial", "platform": "Mode", "type": "Tutorial", "difficulty": "Intermediate", "time": "2 hours", "url": "https://mode.com/sql-tutorial/"},
+      {"title": "PostgreSQL Documentation", "platform": "PostgreSQL", "type": "Documentation", "difficulty": "Intermediate", "time": "1-3 hours", "url": "https://www.postgresql.org/docs/"}
+    ]
+  },
+  {
+    "category": "Excel",
+    "items": [
+      {"title": "Excel Training", "platform": "Microsoft Learn", "type": "Course", "difficulty": "Beginner", "time": "3 hours", "url": "https://learn.microsoft.com/en-us/training/paths/excel/"},
+      {"title": "Excel Formulas Guide", "platform": "Microsoft Support", "type": "Documentation", "difficulty": "Beginner", "time": "1 hour", "url": "https://support.microsoft.com/en-us/excel"}
+    ]
+  },
+  {
+    "category": "Data Analytics",
+    "items": [
+      {"title": "Google Data Analytics Certificate", "platform": "Coursera", "type": "Course", "difficulty": "Beginner", "time": "1-3 months", "url": "https://www.coursera.org/professional-certificates/google-data-analytics"},
+      {"title": "Kaggle Learn", "platform": "Kaggle", "type": "Course", "difficulty": "Beginner", "time": "Varied", "url": "https://www.kaggle.com/learn"}
+    ]
+  },
+  {
+    "category": "Machine Learning",
+    "items": [
+      {"title": "scikit-learn Documentation", "platform": "scikit-learn", "type": "Documentation", "difficulty": "Intermediate", "time": "2 hours", "url": "https://scikit-learn.org/stable/documentation.html"},
+      {"title": "Machine Learning Crash Course", "platform": "Google Developers", "type": "Course", "difficulty": "Beginner", "time": "2-3 hours", "url": "https://developers.google.com/machine-learning/crash-course"},
+      {"title": "Fast.ai", "platform": "Fast.ai", "type": "Course", "difficulty": "Intermediate", "time": "Varied", "url": "https://course.fast.ai/"}
+    ]
+  },
+  {
+    "category": "Web Development",
+    "items": [
+      {"title": "MDN Web Docs", "platform": "MDN", "type": "Documentation", "difficulty": "Beginner", "time": "2 hours", "url": "https://developer.mozilla.org/en-US/docs/Web"},
+      {"title": "freeCodeCamp", "platform": "freeCodeCamp", "type": "Course", "difficulty": "Beginner", "time": "Varied", "url": "https://www.freecodecamp.org/"}
+    ]
+  },
+  {
+    "category": "Cloud",
+    "items": [
+      {"title": "AWS Skill Builder", "platform": "AWS", "type": "Course", "difficulty": "Beginner", "time": "Varied", "url": "https://skillbuilder.aws/"},
+      {"title": "Azure Learning Paths", "platform": "Microsoft Learn", "type": "Course", "difficulty": "Beginner", "time": "Varied", "url": "https://learn.microsoft.com/en-us/training/paths/"}
+    ]
+  },
+  {
+    "category": "Cybersecurity",
+    "items": [
+      {"title": "Cybersecurity Learning Paths", "platform": "Microsoft Learn", "type": "Course", "difficulty": "Beginner", "time": "Varied", "url": "https://learn.microsoft.com/en-us/training/browse/?products=security"},
+      {"title": "Google Cybersecurity Certificate", "platform": "Coursera", "type": "Course", "difficulty": "Beginner", "time": "Varied", "url": "https://www.coursera.org/professional-certificates/google-cybersecurity"}
+    ]
+  }
+]

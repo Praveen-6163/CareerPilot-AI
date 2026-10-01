@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPilot AI | Resume Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+    <script defer src="{{ url_for('static', filename='js/resume.js') }}"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar slim">
+        <div class="brand-wrap">
+          <div class="brand-mark"><span class="brand-dot"></span></div>
+          <div><h2>CareerPilot AI</h2></div>
+        </div>
+        <nav class="nav-links">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/career-guide">Career Guide</a>
+          <a href="/jobs">Jobs</a>
+        </nav>
+      </header>
+
+      <main class="resume-layout">
+        <section class="resume-panel">
+          <p class="eyebrow">Resume intelligence</p>
+          <h1>Analyze your resume against your target role</h1>
+          <form id="resumeForm" class="resume-form">
+            <label>Upload resume
+              <input type="file" id="resumeFile" accept=".pdf,.doc,.docx,.txt" />
+            </label>
+            <label>Target role
+              <input type="text" id="targetRole" placeholder="e.g. Data Analyst" />
+            </label>
+            <label>Job description (optional)
+              <textarea id="jobDescription" rows="6" placeholder="Paste a job description to compare your resume..."></textarea>
+            </label>
+            <button type="submit" class="primary-btn">Analyze Resume</button>
+          </form>
+        </section>
+        <aside class="results-panel">
+          <h3>Analysis output</h3>
+          <div id="resumeResult" class="result-box">
+            <p>Your resume analysis will appear here after upload.</p>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>

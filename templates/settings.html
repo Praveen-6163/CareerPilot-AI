@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPilot AI | Settings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+  </head>
+  <body>
+    <header class="topbar slim">
+      <div class="brand-wrap">
+        <div class="brand-mark"><span class="brand-dot"></span></div>
+        <div><h2>CareerPilot AI</h2></div>
+      </div>
+      <nav class="nav-links">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/career-guide">Career Guide</a>
+        <a href="/resume-analyzer">Resume AI</a>
+      </nav>
+    </header>
+    <main class="page-shell">
+      <section class="form-panel">
+        <p class="eyebrow">Preferences</p>
+        <h1>Update your setup</h1>
+        <div class="insight-box">
+          <p>AI mode: Demo mode enabled if API key is absent.</p>
+          <p>Storage: JSON files are used for local persistence.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

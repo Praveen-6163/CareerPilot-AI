@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPilot AI | AI Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+  </head>
+  <body>
+    <header class="topbar slim">
+      <div class="brand-wrap">
+        <div class="brand-mark"><span class="brand-dot"></span></div>
+        <div><h2>CareerPilot AI</h2></div>
+      </div>
+      <nav class="nav-links">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/resume-analyzer">Resume AI</a>
+        <a href="/jobs">Jobs</a>
+      </nav>
+    </header>
+    <main class="page-shell">
+      <section class="form-panel">
+        <p class="eyebrow">Skill + role analysis</p>
+        <h1>AI analysis output</h1>
+        <div class="result-box">
+          <p>Target role fit: Strong</p>
+          <p>Skill gaps: SQL, storytelling, portfolio project, interview prep</p>
+          <p>Recommended next steps: complete one domain project and optimize resume keywords.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

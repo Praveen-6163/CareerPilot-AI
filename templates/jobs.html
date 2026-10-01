@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPilot AI | Jobs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+  </head>
+  <body>
+    <header class="topbar slim">
+      <div class="brand-wrap">
+        <div class="brand-mark"><span class="brand-dot"></span></div>
+        <div><h2>CareerPilot AI</h2></div>
+      </div>
+      <nav class="nav-links">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/career-guide">Career Guide</a>
+        <a href="/resume-analyzer">Resume AI</a>
+      </nav>
+    </header>
+    <main class="page-shell">
+      <section class="form-panel">
+        <p class="eyebrow">Job search</p>
+        <h1>Relevant job portals</h1>
+        <div class="insight-box">
+          <ul>
+            <li>LinkedIn Jobs</li>
+            <li>Naukri</li>
+            <li>Indeed</li>
+            <li>Glassdoor</li>
+            <li>Wellfound</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

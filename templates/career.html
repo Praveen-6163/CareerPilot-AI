@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPilot AI | Career Guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+    <script defer src="{{ url_for('static', filename='js/career.js') }}"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar slim">
+        <div class="brand-wrap">
+          <div class="brand-mark"><span class="brand-dot"></span></div>
+          <div><h2>CareerPilot AI</h2></div>
+        </div>
+        <nav class="nav-links">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/resume-analyzer">Resume AI</a>
+          <a href="/jobs">Jobs</a>
+        </nav>
+      </header>
+
+      <main class="form-layout">
+        <section class="form-panel">
+          <p class="eyebrow">Career guidance</p>
+          <h1>Build your career profile</h1>
+          <form id="careerForm" class="career-form">
+            <div class="step active" data-step="1">
+              <label>Current role
+                <input type="text" name="currentRole" placeholder="e.g. B.Tech Student / Fresher / Analyst" />
+              </label>
+              <label>Career target
+                <input type="text" name="targetRole" placeholder="e.g. Data Analyst" />
+              </label>
+              <label>Preferred industry
+                <input type="text" name="industry" placeholder="e.g. IT, Finance, Product" />
+              </label>
+            </div>
+            <div class="step" data-step="2">
+              <label>Current skills
+                <textarea name="skills" rows="4" placeholder="List your skills"></textarea>
+              </label>
+              <label>Learning availability
+                <select name="availability">
+                  <option value="2">2 hrs/week</option>
+                  <option value="5">5 hrs/week</option>
+                  <option value="8">8 hrs/week</option>
+                  <option value="10">10+ hrs/week</option>
+                </select>
+              </label>
+              <label>Experience level
+                <select name="experienceLevel">
+                  <option value="fresher">Fresher</option>
+                  <option value="early">Early Career</option>
+                  <option value="mid">Mid Career</option>
+                  <option value="experienced">Experienced</option>
+                </select>
+              </label>
+            </div>
+            <div class="step" data-step="3">
+              <label>Career goal statement
+                <textarea name="goal" rows="4" placeholder="What do you want to achieve in the next 12 months?"></textarea>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="secondary-btn hidden" id="prevStep">Previous</button>
+              <button type="button" class="primary-btn" id="nextStep">Next</button>
+              <button type="submit" class="primary-btn hidden" id="submitCareer">Generate Career Plan</button>
+            </div>
+          </form>
+        </section>
+        <aside class="insight-panel">
+          <h3>AI guidance</h3>
+          <div class="insight-box">
+            <p>We’ll match your current profile with a high-fit role, identify skill gaps, and generate a personalized 30-day plan.</p>
+          </div>
+          <div class="insight-box small">
+            <span>Expected output</span>
+            <ul>
+              <li>Role fit summary</li>
+              <li>Priority skills</li>
+              <li>30-day roadmap</li>
+            </ul>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>

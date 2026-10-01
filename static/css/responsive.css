@@ -1,0 +1,32 @@
+@media (max-width: 980px) {
+  .landing-hero,
+  .feature-grid,
+  .stats-grid,
+  .content-grid,
+  .form-layout,
+  .resume-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .topbar,
+  .nav-links,
+  .cta-row,
+  .panel-header,
+  .header-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .landing-hero,
+  .feature-grid,
+  .stats-grid,
+  .readiness-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-panel {
+    padding: 22px 18px;
+  }
+}

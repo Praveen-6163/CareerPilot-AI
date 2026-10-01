@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPilot AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+    <script defer src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark"><span class="brand-dot"></span></div>
+        <div><h2>CareerPilot AI</h2></div>
+      </div>
+      <nav class="nav-links">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/career-guide">Career</a>
+        <a href="/resume-analyzer">Resume AI</a>
+        <a href="/jobs">Job Search</a>
+      </nav>
+      <a class="primary-btn" href="/career-guide">Get Started</a>
+    </header>
+
+    <main class="landing-hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Your AI career compass</span>
+        <h1>Turn your potential into a <span class="hero-orange">real career plan.</span> <span class="hero-teal">Build your next chapter.</span></h1>
+        <p>Discover your best-fit career path, close skill gaps quickly, optimize your resume, and move forward with an actionable 30-day roadmap built for your goals.</p>
+        <div class="cta-row">
+          <a class="primary-btn" href="/career-guide">Create My Career Plan</a>
+          <a class="secondary-btn" href="/resume-analyzer">Analyze My Resume</a>
+        </div>
+        <div class="mini-stats">
+          <div><strong>30-Day</strong><span>Roadmap</span></div>
+          <div><strong>ATS</strong><span>Optimization</span></div>
+          <div><strong>AI</strong><span>Career Guidance</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-card main-card">
+          <div class="card-head">Career goal flow</div>
+          <div class="flow-list">
+            <span>Career Goal</span>
+            <span>Skill Gap</span>
+            <span>30-Day Roadmap</span>
+            <span>Resume</span>
+            <span>ATS</span>
+            <span>Jobs</span>
+          </div>
+        </div>
+        <div class="visual-card metric-card">
+          <div class="metric-label">Career Readiness</div>
+          <div class="metric-value">72%</div>
+          <div class="progress"><span style="width:72%"></span></div>
+        </div>
+      </div>
+    </main>
+
+    <section class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">AI</div>
+        <h3>Career Guidance</h3>
+        <p>Target role matching, skill gap analysis, custom 30-day learning paths, and curated resources.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">RES</div>
+        <h3>Resume Intelligence</h3>
+        <p>Analyze your resume against job descriptions and uncover missing skills and weak sections.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">ATS</div>
+        <h3>ATS Optimization</h3>
+        <p>Estimate compatibility and improve content structure, keywords, and relevance for your target role.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">JOB</div>
+        <h3>Job Search</h3>
+        <p>Find relevant search pages and job portals aligned to your selected career path.</p>
+      </div>
+    </section>
+
+    <section class="feature-grid process-grid" style="margin-top: 0;">
+      <div class="feature-card">
+        <div class="feature-icon">01</div>
+        <h3>Define your target</h3>
+        <p>Choose your preferred role, industry, and career vision to personalize every suggestion.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">02</div>
+        <h3>Check skill gaps</h3>
+        <p>Compare your strengths against your goal and identify what matters most for growth.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">03</div>
+        <h3>Follow a roadmap</h3>
+        <p>Get a focused 30-day sequence of priorities, learning tasks, and milestones to follow.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">04</div>
+        <h3>Apply better</h3>
+        <p>Improve your resume, ATS score, and interview readiness before each opportunity.</p>
+      </div>
+    </section>
+
+    <section class="page-shell" style="margin-top: 10px;">
+      <div class="form-panel" style="text-align: center; padding: 42px 28px;">
+        <span class="eyebrow">Ready to move forward?</span>
+        <h2 style="margin: 14px 0 12px; font-size: clamp(2rem, 4vw, 3rem);">Build a smarter career path today.</h2>
+        <p style="max-width: 700px; margin: 0 auto 24px; color: var(--muted); line-height: 1.8;">
+          CareerPilot AI helps you plan, optimize, and apply with more clarity so you can move toward your ideal role faster.
+        </p>
+        <div class="cta-row" style="justify-content: center; margin-top: 0;">
+          <a class="primary-btn" href="/career-guide">Start now</a>
+          <a class="secondary-btn" href="/dashboard">Open dashboard</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

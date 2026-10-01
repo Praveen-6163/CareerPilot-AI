@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerPilot AI | Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+  <script defer src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand-wrap">
+      <div class="brand-mark"><span class="brand-dot"></span></div>
+      <div><h2>CareerPilot AI</h2></div>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="nav-item active" href="/dashboard">Dashboard</a>
+      <a class="nav-item" href="/career-guide">Career Guide</a>
+      <a class="nav-item" href="/resume-analyzer">Resume AI</a>
+      <a class="nav-item" href="/roadmap">Roadmap</a>
+      <a class="nav-item" href="/jobs">Job Search</a>
+      <a class="nav-item" href="/resources">Resources</a>
+      <a class="nav-item" href="/interview">Interview Prep</a>
+      <a class="nav-item" href="/settings">Settings</a>
+    </nav>
+  </aside>
+  <main class="main-panel">
+    <header class="panel-header">
+      <div>
+        <p class="eyebrow">Career dashboard</p>
+        <h1>Build Your Career With AI</h1>
+      </div>
+      <div class="header-actions">
+        <button class="secondary-btn" type="button">Demo Mode</button>
+        <a class="primary-btn" href="/career-guide">Create My Career Plan</a>
+      </div>
+    </header>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <div class="stat-label">Career Readiness</div>
+        <div class="stat-value">72%</div>
+        <div class="stat-meta">Strong potential</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-label">Skill Match</div>
+        <div class="stat-value">8 / 12</div>
+        <div class="stat-meta">Target role fit</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-label">Resume ATS</div>
+        <div class="stat-value">78%</div>
+        <div class="stat-meta">Estimated ATS</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-label">Roadmap Progress</div>
+        <div class="stat-value">Day 12 / 30</div>
+        <div class="stat-meta">Focused learning</div>
+      </article>
+    </section>
+
+    <section class="content-grid">
+      <article class="glass-card wide-card">
+        <div class="card-header">
+          <h3>Career readiness snapshot</h3>
+          <span class="status-badge success">Ready</span>
+        </div>
+        <div id="readinessGrid" class="readiness-grid"></div>
+      </article>
+      <article class="glass-card">
+        <div class="card-header">
+          <h3>Top focus areas</h3>
+        </div>
+        <ul class="check-list">
+          <li>Strengthen SQL and dashboarding</li>
+          <li>Build one analytics portfolio project</li>
+          <li>Polish resume summary</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</div>
+
+<div class="assistant-floating">
+  <button class="assistant-button" id="assistantToggle">CareerPilot Copilot</button>
+  <div class="assistant-panel" id="assistantPanel">
+    <div class="assistant-header">CareerPilot Copilot</div>
+    <div class="assistant-body">
+      <p>Ask about your roadmap, resume, skills, or interview prep.</p>
+      <div class="assistant-suggestions">
+        <button data-question="How should I improve my roadmap?">Roadmap</button>
+        <button data-question="How can I improve my resume?">Resume</button>
+        <button data-question="What should I learn for Data Analyst?">Skills</button>
+      </div>
+      <div class="assistant-input-wrap">
+        <input id="assistantInput" placeholder="Ask CareerPilot Copilot..." />
+        <button id="assistantSend">Send</button>
+      </div>
+      <div id="assistantOutput" class="assistant-output"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

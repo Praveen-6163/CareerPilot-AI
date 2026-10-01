@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.pytest_cache/
+.DS_Store
+uploads/*
+!uploads/.gitkeep
+data/*.json
+!data/resources.json
